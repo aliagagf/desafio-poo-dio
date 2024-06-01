@@ -1,4 +1,4 @@
-package br.com.dio.desafio.dominio;
+package conteudos;
 
 import java.util.*;
 
@@ -73,5 +73,11 @@ public class Dev {
     @Override
     public int hashCode() {
         return Objects.hash(nome, conteudosInscritos, conteudosConcluidos);
+    }
+
+    @Override
+    public String toString() {
+        return ("Dev Nome: " + nome + ", Conteúdos Inscritos: " + conteudosInscritos + ", Conteúdos Concluídos: "
+                + conteudosConcluidos);
     }
 }
